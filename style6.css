@@ -1,0 +1,22 @@
+div {
+    width: 500px;
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    color: blue;
+
+}
+.title{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+button:hover {
+    background: green;
+}
