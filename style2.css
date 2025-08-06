@@ -1,20 +1,13 @@
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
+ul{
+    list-style: none;
 }
-h1{
-    background-color: black;
-    color:white;
-    text-align: center;
+li{
+    width: 100px;
+    height: 10px;
+    margin-bottom: 10px;
     padding: 10px;
+    background-color: rgb(210, 204, 204);
 }
-p{
-    background-color: grey;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    margin-right: 10px;
-    color:black;
+li:hover {
+    background-color: rgb(78, 77, 77);
 }
