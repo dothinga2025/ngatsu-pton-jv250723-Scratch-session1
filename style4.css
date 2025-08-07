@@ -1,8 +1,14 @@
-p{
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
+div{
+color :black;
+background-color: green;
+width: 200px;
+height: 200px;
+margin: 20px;
+padding-top: 5px;
 }
-.text-blue{
-    color: blue;
+div:hover {
+    width: 200px;
+    height: 200px;
+    background: green;
+    transform: rotate(30deg);
 }
