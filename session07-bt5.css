@@ -1,0 +1,34 @@
+* {
+    margin: 10px;
+    border: 1px solid white;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    border: 2px solid black;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(80px, auto));
+    gap: 12px;
+    grid-template-areas:
+        "big1 small1 small2"
+        "big1 small3 small4"
+        "big2 small5 small6"
+        "big2 small7 small8";
+}
+.big {
+    display: flex;
+    align-items: center;
+    grid-row: span2;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+}
+.item {
+    display: flex;
+    background-color: blue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
