@@ -1,0 +1,23 @@
+.flex-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.flex-item {
+    flex: 1;
+    min-width: calc(25% - 10px);
+    background-color: orangered;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+}
+@media screen and (max-width:1024px) {
+    .flex-item {
+    width: calc(50% - 10px);
+}}
+@media screen and (max-width: 760px) {
+    .flex-item {
+        width: calc(100% - 10px);
+    }
+}
