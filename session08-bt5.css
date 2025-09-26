@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: white;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.user-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+.booking-form {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.booking-form h2 {
+    margin-bottom: 15px;
+}
+.tour-info, .payment {
+    margin: 20px 0;
+}
+.card-options span {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #666;
+}
+.cards {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+.card {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+.card.purple {
+    background: wheat;
+}
+.card.green {
+    background: green;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input[type="text"],form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.save-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+
+}
+.btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover {
+    background: #1e40af;
+}
+
+.booking-details {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.hotel-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.price-details {
+    margin-top: 20px;
+}
+.price-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+.price-details hr {
+    margin: 10px 0;
+}
+.total {
+    font-size: 18px;
+}
+.newsletter {
+    margin: 30px;
+    padding: 20px;
+    background: #1e40af;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+.newsletter-form {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.newsletter-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    width: 250px;
+}
+.newsletter-form button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #f9fafb;
+    padding: 30px;
+    margin-top: 20px;
+}
+.footer .col {
+    flex: 1;
+    min-width: 180px;
+    margin: 10px;
+}
+footer h4 {
+    margin-bottom: 10px;
+}
+footer ul {
+    list-style: none;
+}
+.footer ul li {
+    margin: 5px 0;
+color: #666;
+font-size: 14px;
+}
+
+@media(max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-form input, .newsletter-form button {
+        width: 100%;
+        border-radius: 6px;
+        margin: 5px 0;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
